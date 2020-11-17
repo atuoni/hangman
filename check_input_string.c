@@ -1,11 +1,16 @@
-
+//****************************************************************************
+// File:   check_input_string.c
+// Author: Amauri Tuoni
+//
+// Função para ler string do teclado                Version 1.0
+// 
+// Created on 14 de Outubro de 2020, 15:49
+//****************************************************************************
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
-#include <locale.h>
+//#include <string.h>
 #include <wchar.h>
 #include "check_input_string.h"
-
 
 int check_input_string(wchar_t *string, int size)
 {

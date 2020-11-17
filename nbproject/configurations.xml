@@ -4,12 +4,16 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
+      <itemPath>check_file_string.h</itemPath>
       <itemPath>check_input_string.h</itemPath>
+      <itemPath>loading_with_noload.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
+      <itemPath>check_file_string.c</itemPath>
       <itemPath>check_input_string.c</itemPath>
+      <itemPath>loading_with_noload.c</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -37,13 +41,18 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
-        <cTool>
-          <standard>3</standard>
-        </cTool>
       </compileType>
+      <item path="check_file_string.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="check_file_string.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="check_input_string.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="check_input_string.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="loading_with_noload.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="loading_with_noload.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="10">
       </item>
@@ -68,9 +77,17 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="check_file_string.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="check_file_string.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="check_input_string.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="check_input_string.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="loading_with_noload.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="loading_with_noload.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>

@@ -35,7 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/check_file_string.o \
 	${OBJECTDIR}/check_input_string.o \
+	${OBJECTDIR}/loading_with_noload.o \
 	${OBJECTDIR}/main.o
 
 
@@ -63,10 +65,20 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/hangman: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/hangman ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/check_file_string.o: check_file_string.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/check_file_string.o check_file_string.c
+
 ${OBJECTDIR}/check_input_string.o: check_input_string.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/check_input_string.o check_input_string.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/check_input_string.o check_input_string.c
+
+${OBJECTDIR}/loading_with_noload.o: loading_with_noload.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/loading_with_noload.o loading_with_noload.c
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
